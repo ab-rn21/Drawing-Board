@@ -65,6 +65,9 @@ function createButtons() {
     });
 
     eraserButton.addEventListener("click", () => {
+        if (mixieButton.getAttribute("class") == "active") {
+            mixieButton.removeAttribute("class");
+        }
         currentColor = "#fff";
     });
 
