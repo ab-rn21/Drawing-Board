@@ -83,6 +83,8 @@ function createButtons() {
         currentSize = sizeSlider.value;
         let span = document.getElementsByTagName("span");
         span[0].textContent =`${currentSize} x ${currentSize}`;
+        let grid = document.querySelector(".grid");
+        document.body.removeChild(grid);
         createBoard();
     })
 
